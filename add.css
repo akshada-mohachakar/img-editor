@@ -1,0 +1,140 @@
+/* General Styles */
+body {
+  font-family: "Arial", sans-serif;
+  background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  color: rgb(143, 136, 136);
+}
+
+.container {
+  background: #ffffff;
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  width: 90%;
+  max-width: 1200px;
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 1.5rem;
+  font-size: 2rem;
+  color: #444;
+}
+
+/* Show Image Button */
+#showImage {
+  margin-bottom: 1.5rem;
+  padding: 0.5rem 1rem;
+  background: #119e0c;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+#showImage:hover {
+  background: #218838;
+}
+
+/* Editor Layout */
+.editor {
+  display: flex;
+  gap: 2rem;
+  align-items: flex-start;
+}
+
+.image-container {
+  flex: 1;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  position: relative;
+  max-height: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f0f0f0;
+}
+
+#uploadedImage {
+  max-width: 100%;
+  max-height: 100%;
+  display: none;
+  transition: all 0.3s ease;
+}
+
+/* Text Overlay */
+#textOverlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+  cursor: move;
+  user-select: none;
+}
+
+/* Controls */
+.controls {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem;
+  background: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.control-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+label {
+  font-weight: bold;
+}
+
+input[type="range"],
+input[type="number"] {
+  width: 100%;
+  cursor: pointer;
+}
+
+input[type="number"] {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Text Controls */
+.move-buttons {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+}
+
+.move-buttons button {
+  padding: 0.5rem 1rem;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  background: #007bff;
+  color: white;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.move-buttons button:hover {
+  background: #0056b3;
+}
